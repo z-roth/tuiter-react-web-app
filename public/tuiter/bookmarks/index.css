@@ -14,6 +14,7 @@
 
 .wd-content-text {
   margin-top: 0px;
+  width: 506px;
 }
 
 .wd-content-link {
@@ -63,4 +64,8 @@
   gap: 12px;
   text-decoration: none;
   align-items: baseline;
+}
+
+.wd-container {
+  display: inline-block;
 }
