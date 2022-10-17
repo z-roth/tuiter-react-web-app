@@ -6,6 +6,7 @@ global1 = 10;
 var functionScoped = 2;
 let blockScoped = 5;
 const constant1 = global1 + functionScoped - blockScoped;
+console.log(global1);
 console.log(functionScoped);
 console.log(blockScoped);
 console.log(constant1);
@@ -108,7 +109,8 @@ console.log(variableArray1);
 console.log("Array index and length");
 const length1 = numberArray1.length;
 const index1 = numberArray1.indexOf(3);
-console.log;
+console.log(length1);
+console.log(index1);
 
 console.log("Add and remove data to arrays");
 // adding new items
@@ -165,8 +167,8 @@ const username = "alice";
 const greeting1 = `Welcome home ${username}`;
 console.log(greeting1);
 
-isLoggedIn = false;
-const greeting2 = `Logged in: ${isLoggedIn ? "Yes" : "No"}`;
+loggedIn2 = false;
+const greeting2 = `Logged in: ${loggedIn2 ? "Yes" : "No"}`;
 console.log(greeting2);
 
 const init = () => {
@@ -186,6 +188,7 @@ const init = () => {
 
   const getIdAttr = $("#get-id-attr");
   const id = getIdAttr.attr("id");
+  console.log("Get and set attributes")
   console.log(id);
 
   const setClassAttr = $("#set-class-attr");
