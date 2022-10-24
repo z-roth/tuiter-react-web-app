@@ -35,7 +35,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                    ${active === "messages" ? "active" : ""}`}
         href="/messages"
       >
-        <i class="bi bi-envelope"></i>
+        <i class="bi bi-envelope-fill"></i>
         <span class="d-none d-xl-inline"> Messages</span>
       </a>
       <a
