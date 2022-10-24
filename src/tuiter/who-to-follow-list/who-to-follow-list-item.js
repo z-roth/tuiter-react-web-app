@@ -9,6 +9,7 @@ const WhoToFollowListItem = ({ who }) => {
             className="rounded-circle"
             height={48}
             src={`/images/${who.avatarIcon}`}
+            alt={`${who.userName}`}
           />
         </div>
         <div className="col-8">
