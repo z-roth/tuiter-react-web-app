@@ -1,74 +1,81 @@
 import React from "react";
 
-const NavigationSidebar = ({ active = "explore" }) => {
+const NavigationSidebar = ({ active }) => {
   return (
     <div className="list-group">
       <a className="list-group-item" href="/">
-        <i class="bi bi-twitter"></i>
+        <i className="bi bi-twitter"></i>
       </a>
       <a
         className={`list-group-item
                    ${active === "home" ? "active" : ""}`}
-        href="/home"
+        href="/tuiter"
       >
-        <i class="bi bi-house-fill"></i>
-        <span class="d-none d-xl-inline"> Home</span>
+        <i className="bi bi-house"></i>
+        <span className="d-none d-xl-inline"> Home</span>
       </a>
       <a
         className={`list-group-item
                    ${active === "explore" ? "active" : ""}`}
         href="/explore"
       >
-        <i class="bi bi-hash"></i>
-        <span class="d-none d-xl-inline"> Explore</span>
+        <i className="bi bi-hash"></i>
+        <span className="d-none d-xl-inline"> Explore</span>
+      </a>
+      <a
+        className={`list-group-item ${active === "labs" ? "active" : ""}`}
+        href="/labs"
+      >
+        <i className="bi bi-asterisk"></i>
+        <span className="d-none d-xl-inline"> Labs</span>
       </a>
       <a
         className={`list-group-item
                    ${active === "notifications" ? "active" : ""}`}
         href="/notifications"
       >
-        <i class="bi bi-bell-fill"></i>
-        <span class="d-none d-xl-inline"> Notifications</span>
+        <i className="bi bi-bell"></i>
+        <span className="d-none d-xl-inline"> Notifications</span>
       </a>
       <a
         className={`list-group-item
                    ${active === "messages" ? "active" : ""}`}
         href="/messages"
       >
-        <i class="bi bi-envelope-fill"></i>
-        <span class="d-none d-xl-inline"> Messages</span>
+        <i className="bi bi-envelope"></i>
+        <span className="d-none d-xl-inline"> Messages</span>
       </a>
       <a
         className={`list-group-item
                    ${active === "bookmarks" ? "active" : ""}`}
         href="/bookmarks"
       >
-        <i class="bi bi-bookmark-fill"></i>
-        <span class="d-none d-xl-inline"> Bookmarks</span>
+        <i className="bi bi-bookmark"></i>
+        <span className="d-none d-xl-inline"> Bookmarks</span>
       </a>
       <a
         className={`list-group-item
                    ${active === "lists" ? "active" : ""}`}
         href="/lists"
       >
-        <i class="bi bi-list"></i>
-        <span class="d-none d-xl-inline"> Lists</span>
+        <i className="bi bi-list"></i>
+        <span className="d-none d-xl-inline"> Lists</span>
       </a>
       <a
         className={`list-group-item
                    ${active === "profile" ? "active" : ""}`}
         href="/profile"
       >
-        <i class="bi bi-person-fill"></i>
-        <span class="d-none d-xl-inline"> Profile</span>
+        <i className="bi bi-person"></i>
+        <span className="d-none d-xl-inline"> Profile</span>
       </a>
       <a
         className={`list-group-item
                    ${active === "more" ? "active" : ""}`}
         href="/more"
       >
-        <i class="bi bi-three-dots"></i>
-        <span class="d-none d-xl-inline"> More</span>
+        <i className="bi bi-three-dots"></i>
+        <span className="d-none d-xl-inline"> More</span>
       </a>
     </div>
   );
